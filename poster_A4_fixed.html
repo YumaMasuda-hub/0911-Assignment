@@ -133,8 +133,15 @@
   .footer{
     font-size:8pt; color:var(--gray); line-height:1.5;
     margin-top:1.5mm; padding-top:2mm; border-top:1pt solid #D6E4CE;
+    display:flex; justify-content:space-between; align-items:flex-end; gap:3mm;
   }
+  .footer-left{ flex:1 1 auto; }
   .footer .ai{ font-style:italic; }
+  .student-badge{
+    flex:0 0 auto; background:#F4F8F1; border:1pt solid #A4C492;
+    border-radius:2.5mm; padding:1.2mm 3mm; font-weight:700; font-size:8.5pt; color:#2C5F2D;
+    text-align:right; white-space:nowrap;
+  }
 </style>
 </head>
 <body>
@@ -333,8 +340,13 @@
 
   <!-- Footer -->
   <div class="footer">
-    <div class="ai">※本資料は上田貴志先生の講義資料（大阪大学 集中講義 2026.9.10-11）の内容をもとに、要約・構成・作図についてAIの支援を得て作成しました。</div>
-    <div>出典：Lukowitz et al. (1996) Cell／Lauber et al. (1997) J. Cell Biol.／Bonifacino &amp; Glick (2004) Cell</div>
+    <div class="footer-left">
+      <div class="ai">※本資料は上田貴志先生の講義資料（大阪大学 集中講義 2026.9.10-11）の内容をもとに、要約・構成・作図についてAIの支援を得て作成しました。</div>
+      <div>出典：Lukowitz et al. (1996) Cell／Lauber et al. (1997) J. Cell Biol.／Bonifacino &amp; Glick (2004) Cell</div>
+    </div>
+    <div class="student-badge">
+      学籍番号：00A00000　氏名：田中 太郎
+    </div>
   </div>
 
 </div>
