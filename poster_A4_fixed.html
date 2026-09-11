@@ -13,7 +13,7 @@
     --red:#C0392B;
     --red-light:#FBE1DE;
     --card:#F4F8F1;
-    --gray:#5B5B5B;
+    --gray:#4A4A4A;
   }
   *{box-sizing:border-box;}
   @page{ size:210mm 297mm; margin:0; }
@@ -27,96 +27,110 @@
     height:297mm;
     margin:0 auto;
     background:#ffffff;
-    padding:12mm 14mm 9mm 14mm;
+    padding:10mm 13mm 8mm 13mm;
     display:flex;
     flex-direction:column;
-    gap:4.5mm;
+    gap:3.8mm;
   }
 
   /* ---------- Title ---------- */
   .title-row{ display:flex; align-items:center; gap:3mm; }
   .badge-round{
-    width:11mm;height:11mm;border-radius:50%;
+    width:11.5mm;height:11.5mm;border-radius:50%;
     background:#2C5F2D; flex:0 0 auto;
     display:flex;align-items:center;justify-content:center;
   }
-  .badge-round svg{width:6.5mm;height:6.5mm;}
+  .badge-round svg{width:7mm;height:7mm;}
   h1{
-    margin:0; font-size:27pt; font-weight:700; color:#2C5F2D;
-    letter-spacing:.5px;
+    margin:0; font-size:25pt; font-weight:800; color:#2C5F2D;
+    letter-spacing:.5px; line-height:1.15;
   }
   .subtitle{
-    margin:1.5mm 0 0 14mm; font-size:12.5pt; font-style:italic; color:var(--gray);
+    margin:1mm 0 0 14.5mm; font-size:12pt; font-weight:600; color:var(--gray);
   }
 
   /* ---------- Mechanism strip ---------- */
   .mech{
-    background:var(--moss-light); border-radius:6mm; padding:4.5mm 7mm 4mm;
+    background:var(--moss-light); border-radius:5mm; padding:3.5mm 6mm 3mm;
+    border:1pt solid #C5DCBA;
   }
-  .mech h2{ margin:0 0 3.5mm; font-size:13.5pt; color:#2C5F2D; font-weight:700; }
-  .mech-row{ display:flex; align-items:flex-start; justify-content:center; }
-  .mech-node{ width:30mm; text-align:center; }
+  .mech h2{ margin:0 0 2.5mm; font-size:12.5pt; color:#2C5F2D; font-weight:800; }
+  .mech-row{ display:flex; align-items:center; justify-content:space-around; }
+  .mech-node{ width:36mm; text-align:center; }
   .mech-node .circ{
-    width:16mm;height:16mm;border-radius:50%;
-    background:#fff; border:1.4pt solid #2C5F2D;
+    width:14mm;height:14mm;border-radius:50%;
+    background:#fff; border:1.6pt solid #2C5F2D;
     display:flex;align-items:center;justify-content:center;
-    margin:0 auto 1.5mm;
+    margin:0 auto 1.2mm;
   }
-  .mech-node .circ svg{ width:9mm; height:9mm; }
-  .mech-node .t1{ font-weight:700; font-size:9.5pt; color:#2C5F2D; }
-  .mech-node .t2{ font-size:9.5pt; color:var(--gray); margin-top:.5mm; }
-  .mech-arrow{ margin-top:8.5mm; width:16mm; }
+  .mech-node .circ svg{ width:8.5mm; height:8.5mm; }
+  .mech-node .t1{ font-weight:800; font-size:9.5pt; color:#2C5F2D; }
+  .mech-node .t2{ font-size:9pt; color:var(--gray); margin-top:.3mm; }
+  .mech-arrow{ width:14mm; flex:0 0 auto; }
   .mech-cap{
-    text-align:center; font-size:10.5pt; font-style:italic; color:var(--gray);
-    margin-top:3mm;
+    text-align:center; font-size:9.5pt; font-weight:600; color:#386634;
+    margin-top:2mm; background:rgba(255,255,255,0.7); padding:1.2mm 3mm; border-radius:3mm;
   }
 
   /* ---------- Divider ---------- */
   .divider{
-    background:#2C5F2D; color:#fff; border-radius:4mm;
-    text-align:center; font-weight:700; font-size:12pt;
-    padding:2.8mm 4mm;
+    background:#2C5F2D; color:#fff; border-radius:3.5mm;
+    text-align:center; font-weight:800; font-size:11.5pt;
+    padding:2.3mm 4mm; letter-spacing:0.5px;
   }
 
   /* ---------- Panels ---------- */
-  .panels{ display:grid; grid-template-columns:repeat(3,1fr); gap:4.5mm; flex:0 0 auto; }
+  .panels{ display:grid; grid-template-columns:repeat(3,1fr); gap:4mm; flex:0 0 auto; }
   .panel{
-    background:var(--card); border:1pt solid #6E9B4F; border-radius:5mm;
-    padding:3mm; display:flex; flex-direction:column;
+    background:var(--card); border:1.2pt solid #A4C492; border-radius:4.5mm;
+    padding:2.8mm; display:flex; flex-direction:column;
   }
-  .panel-head{ display:flex; align-items:center; gap:2.5mm; margin-bottom:2.5mm; }
+  .panel-head{ display:flex; align-items:center; gap:2mm; margin-bottom:1.5mm; }
   .step-badge{
-    width:7mm;height:7mm;border-radius:50%;background:#E08A1E;color:#fff;
-    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10pt;
+    width:6.5mm;height:6.5mm;border-radius:50%;background:#E08A1E;color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:9.5pt;
     flex:0 0 auto;
   }
-  .panel-head .p-title{ font-weight:700; font-size:10.5pt; color:#2C5F2D; }
-  .panel svg.illust{ width:100%; height:48mm; }
-  .panel .cap{ font-size:10.3pt; color:var(--gray); line-height:1.5; margin-top:2.5mm; }
+  .panel-head .p-title{ font-weight:800; font-size:10.5pt; color:#2C5F2D; }
+  .panel svg.illust{ width:100%; height:46mm; background:#fff; border-radius:3mm; border:1pt solid #E2EFE0; }
+  .panel .cap{ font-size:9.5pt; color:#333; line-height:1.45; margin-top:2mm; font-weight:500; }
 
   /* ---------- If-broken box ---------- */
   .broken{
-    background:var(--red-light); border-radius:5mm; padding:3.5mm 6mm;
-    display:flex; align-items:flex-start; gap:4mm;
+    background:var(--red-light); border:1.2pt solid #F1B2AA; border-radius:4.5mm; padding:3mm 5mm;
+    display:flex; flex-direction:column; gap:2mm;
   }
-  .broken .circ{
-    width:11mm;height:11mm;border-radius:50%;background:#fff;flex:0 0 auto;
+  .broken-head{ display:flex; align-items:center; gap:2.5mm; }
+  .broken-head .circ{
+    width:7.5mm;height:7.5mm;border-radius:50%;background:#C0392B;flex:0 0 auto;
     display:flex;align-items:center;justify-content:center;
   }
-  .broken .circ svg{ width:6.5mm;height:6.5mm; }
-  .broken h3{ margin:0 0 1mm; font-size:11pt; color:#C0392B; }
-  .broken p{ margin:0; font-size:10.8pt; color:var(--gray); line-height:1.55; }
+  .broken-head .circ svg{ width:4.5mm;height:4.5mm; fill:none; stroke:#fff; }
+  .broken-head h3{ margin:0; font-size:11.5pt; color:#C0392B; font-weight:800; }
+  
+  .broken-comparison{ display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
+  .cmp-card{
+    background:#fff; border-radius:3.5mm; padding:2mm 3mm; display:flex; align-items:center; gap:2.5mm;
+  }
+  .cmp-card.ok-card{ border:1pt solid #A4C492; }
+  .cmp-card.ng-card{ border:1pt solid #E69A91; }
+  .cmp-card svg{ width:22mm; height:18mm; flex:0 0 auto; }
+  .cmp-text{ display:flex; flex-direction:column; gap:0.5mm; }
+  .cmp-title{ font-size:9.5pt; font-weight:800; }
+  .cmp-title.ok{ color:var(--forest); }
+  .cmp-title.ng{ color:var(--red); }
+  .cmp-desc{ font-size:8.5pt; color:#444; line-height:1.35; }
 
   /* ---------- Closing ---------- */
   .closing{
-    background:#2C5F2D; color:#fff; border-radius:5mm;
-    padding:3mm 4.5mm; display:flex; align-items:center; gap:3mm;
+    background:#2C5F2D; color:#fff; border-radius:4mm;
+    padding:2.5mm 4mm; display:flex; align-items:center; gap:3mm;
   }
-  .closing svg{ width:9mm;height:9mm; flex:0 0 auto; }
-  .closing p{ margin:0; font-size:13.5pt; font-style:italic; font-weight:700; line-height:1.5; }
+  .closing svg{ width:8.5mm;height:8.5mm; flex:0 0 auto; }
+  .closing p{ margin:0; font-size:11pt; font-weight:700; line-height:1.45; }
 
   /* ---------- Footer ---------- */
-  .footer{ font-size:8.3pt; color:var(--gray); line-height:1.6; margin-top:auto; }
+  .footer{ font-size:8pt; color:var(--gray); line-height:1.5; margin-top:auto; }
   .footer .ai{ font-style:italic; }
 </style>
 </head>
@@ -127,133 +141,196 @@
   <div>
     <div class="title-row">
       <div class="badge-round">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C12 6 9 4 5 4C5 8 7 10 12 10ZM12 10C12 6 15 4 19 4C19 8 17 10 12 10Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C12 6 9 4 5 4C5 8 7 10 12 10ZM12 10C12 6 15 4 19 4C19 8 17 10 12 10Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <h1>細胞、分裂中につき壁を建設中</h1>
+      <h1>細胞、分裂中につき壁を建設中！</h1>
     </div>
-    <div class="subtitle">膜交通――生き物共通の宅配便システムが、新しい部屋の壁をつくる</div>
+    <div class="subtitle">膜交通――生き物共通の「宅配便システム」が、植物の新しい部屋を作る</div>
   </div>
 
   <!-- Mechanism strip -->
   <div class="mech">
-    <h2>まずはおさらい：細胞の宅配便システム（動物も植物も酵母もほぼ共通）</h2>
+    <h2>【基礎知識】細胞のなかの「宅配便システム」（膜交通）とは？</h2>
     <div class="mech-row">
       <div class="mech-node">
         <div class="circ">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l5 3V9l5 3V9l5 3v9H3z" fill="none" stroke="#2C5F2D" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 21h18" stroke="#2C5F2D" stroke-width="1.6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 19V9l5 2.5V9l5 2.5V9l6 3v7H3z" fill="none" stroke="#2C5F2D" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 19h18" stroke="#2C5F2D" stroke-width="1.8"/></svg>
         </div>
-        <div class="t1">小胞体（ER）</div>
+        <div class="t1">① 小胞体（ER）</div>
         <div class="t2">材料をつくる工場</div>
       </div>
-      <svg class="mech-arrow" viewBox="0 0 60 20"><path d="M2 10H50" stroke="#2C5F2D" stroke-width="3"/><path d="M42 3L54 10L42 17" fill="none" stroke="#2C5F2D" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg class="mech-arrow" viewBox="0 0 50 16"><path d="M2 8H40" stroke="#2C5F2D" stroke-width="2.5"/><path d="M32 2L42 8L32 14" fill="none" stroke="#2C5F2D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="mech-node">
         <div class="circ">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="14" width="4" height="7" fill="#2C5F2D"/><rect x="10" y="9" width="4" height="12" fill="#2C5F2D"/><rect x="16" y="4" width="4" height="17" fill="#2C5F2D"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="13" width="4" height="7" fill="#2C5F2D" rx="1"/><rect x="10" y="8" width="4" height="12" fill="#2C5F2D" rx="1"/><rect x="16" y="4" width="4" height="16" fill="#2C5F2D" rx="1"/></svg>
         </div>
-        <div class="t1">ゴルジ体</div>
-        <div class="t2">仕分けセンター</div>
+        <div class="t1">② ゴルジ体</div>
+        <div class="t2">荷物の仕分けセンター</div>
       </div>
-      <svg class="mech-arrow" viewBox="0 0 60 20"><path d="M2 10H50" stroke="#2C5F2D" stroke-width="3"/><path d="M42 3L54 10L42 17" fill="none" stroke="#2C5F2D" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg class="mech-arrow" viewBox="0 0 50 16"><path d="M2 8H40" stroke="#2C5F2D" stroke-width="2.5"/><path d="M32 2L42 8L32 14" fill="none" stroke="#2C5F2D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="mech-node">
         <div class="circ">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="8" width="12" height="8" rx="1.2" fill="#E08A1E"/><path d="M14 11h4l3 3v2h-7v-5z" fill="#E08A1E"/><circle cx="6" cy="17" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1.2"/><circle cx="16.5" cy="17" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1.2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="12" height="9" rx="1.5" fill="#E08A1E"/><path d="M14 10h4l3 3v3h-7v-6z" fill="#E08A1E"/><circle cx="6" cy="17" r="2" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/><circle cx="16.5" cy="17" r="2" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/></svg>
         </div>
-        <div class="t1">小胞</div>
-        <div class="t2">配達トラック</div>
+        <div class="t1">③ 小胞（しょうほう）</div>
+        <div class="t2">材料を運ぶ配達トラック</div>
       </div>
     </div>
-    <div class="mech-cap">COPII・SNAREなどの部品を使い、真核生物はほぼ同じ仕組みで荷物を配達している</div>
+    <div class="mech-cap">動物・植物・酵母まで、すべての真核生物が共通して持つ細胞内の物流システム！</div>
   </div>
 
   <!-- Divider -->
-  <div class="divider">今日の配達現場：細胞分裂で「新しい壁」をつくる（植物の例）</div>
+  <div class="divider">【植物の挑戦】細胞分裂の現場で「新しい壁」を建てよう！</div>
 
   <!-- Panels -->
   <div class="panels">
 
     <!-- Panel 1 -->
     <div class="panel">
-      <div class="panel-head"><div class="step-badge">1</div><div class="p-title">分裂スタート</div></div>
+      <div class="panel-head"><div class="step-badge">1</div><div class="p-title">分裂スタート（集結）</div></div>
       <svg class="illust" viewBox="0 0 200 170">
-        <ellipse cx="100" cy="85" rx="72" ry="75" fill="#fff" stroke="#2C5F2D" stroke-width="3"/>
-        <circle cx="100" cy="35" r="13" fill="#6E9B4F"/>
-        <circle cx="100" cy="135" r="13" fill="#6E9B4F"/>
-        <line x1="100" y1="52" x2="100" y2="118" stroke="#E08A1E" stroke-width="2.5" stroke-dasharray="6 5"/>
-        <!-- truck top pointing down -->
-        <g transform="translate(84,18)">
-          <rect x="0" y="4" width="20" height="13" rx="1.5" fill="#E08A1E"/>
-          <path d="M20 7h6l5 5v5h-11v-10z" fill="#E08A1E"/>
-          <circle cx="6" cy="19" r="3" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/>
-          <circle cx="24" cy="19" r="3" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/>
+        <!-- Cell wall boundary -->
+        <ellipse cx="100" cy="85" rx="76" ry="72" fill="none" stroke="#2C5F2D" stroke-width="3"/>
+        <!-- Top Nucleus -->
+        <g transform="translate(100, 35)">
+          <circle r="13" fill="#6E9B4F"/>
+          <circle r="8" fill="#547E3B"/>
+          <path d="M-4 -2 Q0 -5 4 -2 Q0 1 -4 -2" stroke="#fff" stroke-width="1.2" fill="none"/>
         </g>
-        <!-- truck bottom pointing up -->
-        <g transform="translate(116,152) rotate(180)">
-          <rect x="0" y="4" width="20" height="13" rx="1.5" fill="#E08A1E"/>
-          <path d="M20 7h6l5 5v5h-11v-10z" fill="#E08A1E"/>
-          <circle cx="6" cy="19" r="3" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/>
-          <circle cx="24" cy="19" r="3" fill="#fff" stroke="#E08A1E" stroke-width="1.5"/>
+        <!-- Bottom Nucleus -->
+        <g transform="translate(100, 135)">
+          <circle r="13" fill="#6E9B4F"/>
+          <circle r="8" fill="#547E3B"/>
+          <path d="M-4 -2 Q0 -5 4 -2 Q0 1 -4 -2" stroke="#fff" stroke-width="1.2" fill="none"/>
         </g>
+        <!-- Center plane line -->
+        <line x1="35" y1="85" x2="165" y2="85" stroke="#E08A1E" stroke-width="2" stroke-dasharray="5 4"/>
+        <!-- Delivery trucks moving towards center -->
+        <g transform="translate(86,52)">
+          <rect x="0" y="0" width="14" height="9" rx="1" fill="#E08A1E"/>
+          <path d="M14 3h3l3 3v3h-6z" fill="#E08A1E"/>
+          <circle cx="4" cy="10" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1"/>
+          <circle cx="15" cy="10" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1"/>
+        </g>
+        <g transform="translate(114,118) rotate(180)">
+          <rect x="0" y="0" width="14" height="9" rx="1" fill="#E08A1E"/>
+          <path d="M14 3h3l3 3v3h-6z" fill="#E08A1E"/>
+          <circle cx="4" cy="10" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1"/>
+          <circle cx="15" cy="10" r="1.8" fill="#fff" stroke="#E08A1E" stroke-width="1"/>
+        </g>
+        <!-- Vesicle bubbles -->
+        <circle cx="60" cy="85" r="4.5" fill="#E08A1E"/>
+        <circle cx="140" cy="85" r="4.5" fill="#E08A1E"/>
       </svg>
-      <div class="cap">細胞が2つに分かれる準備。真ん中に新しい壁の材料を積んだトラックが集まってくる。</div>
+      <div class="cap">細胞が2つに分かれる準備。中央の境界線に向かって、壁の材料を載せたトラック（小胞）が続々と集まる。</div>
     </div>
 
     <!-- Panel 2 -->
     <div class="panel">
-      <div class="panel-head"><div class="step-badge">2</div><div class="p-title">壁を建設中</div></div>
+      <div class="panel-head"><div class="step-badge">2</div><div class="p-title">壁を建設中（ドッキング）</div></div>
       <svg class="illust" viewBox="0 0 200 170">
-        <ellipse cx="100" cy="85" rx="72" ry="75" fill="#fff" stroke="#2C5F2D" stroke-width="3"/>
-        <circle cx="100" cy="35" r="13" fill="#6E9B4F"/>
-        <circle cx="100" cy="135" r="13" fill="#6E9B4F"/>
-        <rect x="92" y="50" width="16" height="70" rx="3" fill="#2C5F2D"/>
-        <line x1="92" y1="65" x2="108" y2="65" stroke="#fff" stroke-width="1.2" opacity=".6"/>
-        <line x1="92" y1="85" x2="108" y2="85" stroke="#fff" stroke-width="1.2" opacity=".6"/>
-        <line x1="92" y1="105" x2="108" y2="105" stroke="#fff" stroke-width="1.2" opacity=".6"/>
-        <!-- link icons -->
-        <g transform="translate(88,32)"><circle r="7" cx="7" cy="7" fill="none" stroke="#2C5F2D" stroke-width="2"/><path d="M4 7h6" stroke="#2C5F2D" stroke-width="2"/></g>
-        <g transform="translate(88,116)"><circle r="7" cx="7" cy="7" fill="none" stroke="#2C5F2D" stroke-width="2"/><path d="M4 7h6" stroke="#2C5F2D" stroke-width="2"/></g>
-        <text x="100" y="150" text-anchor="middle" font-size="9" font-weight="700" fill="#E08A1E">KNOLLE</text>
+        <ellipse cx="100" cy="85" rx="76" ry="72" fill="none" stroke="#2C5F2D" stroke-width="3"/>
+        <g transform="translate(100, 35)"><circle r="13" fill="#6E9B4F"/><circle r="8" fill="#547E3B"/></g>
+        <g transform="translate(100, 135)"><circle r="13" fill="#6E9B4F"/><circle r="8" fill="#547E3B"/></g>
+        <!-- Forming wall plate in center -->
+        <rect x="52" y="78" width="96" height="14" rx="4" fill="#2C5F2D"/>
+        <line x1="58" y1="85" x2="142" y2="85" stroke="#E4EEDC" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <!-- Docking Hook (KNOLLE) icons -->
+        <g transform="translate(40,85)">
+          <circle r="6" fill="#E08A1E"/>
+          <path d="M-2 -3 L2 0 L-2 3" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(160,85)">
+          <circle r="6" fill="#E08A1E"/>
+          <path d="M2 -3 L-2 0 L2 3" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- Label for KNOLLE hook -->
+        <rect x="58" y="100" width="84" height="14" rx="3" fill="#FBE6C8"/>
+        <text x="100" y="110.5" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#E08A1E">合体補助役 KNOLLE</text>
       </svg>
-      <div class="cap">SNARE分子KNOLLEが受け皿になり、トラック同士が次々とドッキング・合体する。</div>
+      <div class="cap">ドッキング補助役「KNOLLE（クノル）」が働くことで、トラック同士がガッチリ結合し、合体して壁の土台ができる。</div>
     </div>
 
     <!-- Panel 3 -->
     <div class="panel">
-      <div class="panel-head"><div class="step-badge">3</div><div class="p-title">壁が完成</div></div>
+      <div class="panel-head"><div class="step-badge">3</div><div class="p-title">壁が完成（独立）</div></div>
       <svg class="illust" viewBox="0 0 200 170">
-        <ellipse cx="100" cy="85" rx="72" ry="75" fill="#fff" stroke="#2C5F2D" stroke-width="3"/>
-        <rect x="92" y="14" width="16" height="142" rx="3" fill="#2C5F2D"/>
-        <circle cx="62" cy="85" r="13" fill="#6E9B4F"/>
-        <circle cx="138" cy="85" r="13" fill="#6E9B4F"/>
-        <g transform="translate(88,0)">
-          <circle cx="12" cy="12" r="12" fill="#fff" stroke="#2C5F2D" stroke-width="2"/>
-          <path d="M6 12l4 4 8-8" fill="none" stroke="#2C5F2D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <ellipse cx="100" cy="85" rx="76" ry="72" fill="none" stroke="#2C5F2D" stroke-width="3"/>
+        <!-- Top daughter cell nucleus -->
+        <g transform="translate(100, 42)"><circle r="13" fill="#6E9B4F"/><circle r="8" fill="#547E3B"/></g>
+        <!-- Bottom daughter cell nucleus -->
+        <g transform="translate(100, 128)"><circle r="13" fill="#6E9B4F"/><circle r="8" fill="#547E3B"/></g>
+        <!-- Complete Cell Plate wall dividing top and bottom completely (No vesicles remain!) -->
+        <rect x="25" y="78" width="150" height="14" rx="3" fill="#2C5F2D"/>
+        <line x1="26" y1="85" x2="174" y2="85" stroke="#6E9B4F" stroke-width="1.2"/>
+        <!-- Completion Badge -->
+        <g transform="translate(100, 85)">
+          <circle r="10" fill="#2C5F2D" stroke="#fff" stroke-width="2"/>
+          <path d="M-4 0 L-1 3 L4 -3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
+        <text x="100" y="112" text-anchor="middle" font-size="9" font-weight="bold" fill="#2C5F2D">新しい細胞壁が完成！</text>
       </svg>
-      <div class="cap">新しい細胞壁が完成し、細胞は無事に2つへ分かれる。</div>
+      <div class="cap">すべてのトラックが完全に融合し、1本の頑丈な「細胞壁」が完成。細胞が綺麗に2つの部屋へ分離する。</div>
     </div>
 
   </div>
 
-  <!-- If broken -->
+  <!-- If broken box (Visual Diagram comparison) -->
   <div class="broken">
-    <div class="circ">
-      <svg viewBox="0 0 24 24"><path d="M12 3L2 20h20L12 3z" fill="none" stroke="#C0392B" stroke-width="1.8" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="14" stroke="#C0392B" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17" r="1.1" fill="#C0392B"/></svg>
+    <div class="broken-head">
+      <div class="circ">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 20h20L12 3z" stroke-width="2" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="14" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1.2" fill="#fff"/></svg>
+      </div>
+      <h3>【実験で判明！】もしKNOLLE（合体補助役）が無かったら？</h3>
     </div>
-    <div>
-      <h3>もしKNOLLEが無かったら？</h3>
-      <p>トラックが目的地でうまくドッキングできず、壁が完成しない。結果、仕切りのない「多核細胞」になってしまう（Lukowitz et al., 1996 Cell）。</p>
+    
+    <div class="broken-comparison">
+      <!-- Normal card -->
+      <div class="cmp-card ok-card">
+        <svg viewBox="0 0 90 70">
+          <ellipse cx="45" cy="35" rx="40" ry="32" fill="none" stroke="#2C5F2D" stroke-width="2"/>
+          <rect x="6" y="32" width="78" height="6" fill="#2C5F2D"/>
+          <circle cx="45" cy="17" r="7" fill="#6E9B4F"/>
+          <circle cx="45" cy="53" r="7" fill="#6E9B4F"/>
+          <circle cx="75" cy="14" r="6" fill="#2C5F2D"/>
+          <path d="M72 14l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.5"/>
+        </svg>
+        <div class="cmp-text">
+          <div class="cmp-title ok">正常（KNOLLEあり）</div>
+          <div class="cmp-desc">トラックが合体して壁が完成！<br>綺麗に2つの細胞へ分かれる。</div>
+        </div>
+      </div>
+
+      <!-- Mutant card -->
+      <div class="cmp-card ng-card">
+        <svg viewBox="0 0 90 70">
+          <ellipse cx="45" cy="35" rx="40" ry="32" fill="none" stroke="#C0392B" stroke-width="2"/>
+          <circle cx="32" cy="35" r="7" fill="#6E9B4F"/>
+          <circle cx="58" cy="35" r="7" fill="#6E9B4F"/>
+          <!-- Unfused scattered vesicles -->
+          <circle cx="45" cy="22" r="3.5" fill="#E08A1E"/>
+          <circle cx="45" cy="48" r="3.5" fill="#E08A1E"/>
+          <line x1="38" y1="35" x2="52" y2="35" stroke="#C0392B" stroke-width="1.5" stroke-dasharray="2 2"/>
+          <circle cx="75" cy="14" r="6" fill="#C0392B"/>
+          <path d="M72 11l6 6M78 11l-6 6" stroke="#fff" stroke-width="1.5"/>
+        </svg>
+        <div class="cmp-text">
+          <div class="cmp-title ng">KNOLLE欠損（変異体）</div>
+          <div class="cmp-desc">ドッキングできず壁が作れない！<br>仕切りのない<b>「多核細胞」</b>になる。</div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Closing -->
   <div class="closing">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C12 6 9 4 5 4C5 8 7 10 12 10ZM12 10C12 6 15 4 19 4C19 8 17 10 12 10Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <p>膜交通は生き物共通の標準装備。植物はそれを使って、分裂のたびに新しい壁をイチから建てている。</p>
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 21V10M12 10C12 6 9 4 5 4C5 8 7 10 12 10ZM12 10C12 6 15 4 19 4C19 8 17 10 12 10Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p>膜交通は生き物共通の基本システム。植物はその仕組みをうまく応用し、分裂のたびに新しい壁をゼロから築き上げているのです。</p>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <div class="ai">※本資料は上田貴志先生の講義資料（大阪大学 集中講義 2026.9.10-11）の内容をもとに、要約・構成・作図についてClaude（Anthropic）の支援を得て作成しました。</div>
+    <div class="ai">※本資料は上田貴志先生の講義資料（大阪大学 集中講義 2026.9.10-11）の内容をもとに、要約・構成・作図についてAIの支援を得て作成しました。</div>
     <div>出典：Lukowitz et al. (1996) Cell／Lauber et al. (1997) J. Cell Biol.／Bonifacino &amp; Glick (2004) Cell</div>
   </div>
 
