@@ -27,10 +27,10 @@
     height:297mm;
     margin:0 auto;
     background:#ffffff;
-    padding:10mm 13mm 8mm 13mm;
+    padding:11mm 14mm 10mm 14mm;
     display:flex;
     flex-direction:column;
-    gap:3.8mm;
+    gap:4.5mm;
   }
 
   /* ---------- Title ---------- */
@@ -46,44 +46,44 @@
     letter-spacing:.5px; line-height:1.15;
   }
   .subtitle{
-    margin:1mm 0 0 14.5mm; font-size:12pt; font-weight:700; color:var(--gray);
+    margin:1.5mm 0 0 14.5mm; font-size:12pt; font-weight:700; color:var(--gray);
   }
 
   /* ---------- Mechanism strip ---------- */
   .mech{
-    background:var(--moss-light); border-radius:5mm; padding:3.5mm 6mm 3mm;
+    background:var(--moss-light); border-radius:5mm; padding:4mm 7mm 3.5mm;
     border:1pt solid #C5DCBA;
   }
-  .mech h2{ margin:0 0 2.5mm; font-size:12.5pt; color:#2C5F2D; font-weight:800; }
+  .mech h2{ margin:0 0 3mm; font-size:13pt; color:#2C5F2D; font-weight:800; }
   .mech-row{ display:flex; align-items:center; justify-content:space-around; }
-  .mech-node{ width:36mm; text-align:center; }
+  .mech-node{ width:38mm; text-align:center; }
   .mech-node .circ{
-    width:14mm;height:14mm;border-radius:50%;
+    width:15mm;height:15mm;border-radius:50%;
     background:#fff; border:1.6pt solid #2C5F2D;
     display:flex;align-items:center;justify-content:center;
-    margin:0 auto 1.2mm;
+    margin:0 auto 1.5mm;
   }
-  .mech-node .circ svg{ width:8.5mm; height:8.5mm; }
+  .mech-node .circ svg{ width:9mm; height:9mm; }
   .mech-node .t1{ font-weight:800; font-size:9.5pt; color:#2C5F2D; }
   .mech-node .t2{ font-size:9pt; color:var(--gray); margin-top:.3mm; }
   .mech-arrow{ width:14mm; flex:0 0 auto; }
   .mech-cap{
     text-align:center; font-size:9.5pt; font-weight:600; color:#386634;
-    margin-top:2mm; background:rgba(255,255,255,0.7); padding:1.2mm 3mm; border-radius:3mm;
+    margin-top:2.5mm; background:rgba(255,255,255,0.7); padding:1.5mm 3.5mm; border-radius:3mm;
   }
 
   /* ---------- Divider ---------- */
   .divider{
     background:#2C5F2D; color:#fff; border-radius:3.5mm;
     text-align:center; font-weight:800; font-size:11.5pt;
-    padding:2.3mm 4mm; letter-spacing:0.5px;
+    padding:2.5mm 4mm; letter-spacing:0.5px;
   }
 
   /* ---------- Panels ---------- */
-  .panels{ display:grid; grid-template-columns:repeat(3,1fr); gap:4mm; flex:0 0 auto; }
+  .panels{ display:grid; grid-template-columns:repeat(3,1fr); gap:4.5mm; flex:0 0 auto; }
   .panel{
     background:var(--card); border:1.2pt solid #A4C492; border-radius:4.5mm;
-    padding:2.8mm; display:flex; flex-direction:column;
+    padding:3mm; display:flex; flex-direction:column;
   }
   .panel-head{ display:flex; align-items:center; gap:2mm; margin-bottom:1.5mm; }
   .step-badge{
@@ -92,13 +92,13 @@
     flex:0 0 auto;
   }
   .panel-head .p-title{ font-weight:800; font-size:10.5pt; color:#2C5F2D; }
-  .panel svg.illust{ width:100%; height:46mm; background:#fff; border-radius:3mm; border:1pt solid #E2EFE0; }
+  .panel svg.illust{ width:100%; height:48mm; background:#fff; border-radius:3mm; border:1pt solid #E2EFE0; }
   .panel .cap{ font-size:9.3pt; color:#333; line-height:1.45; margin-top:2mm; font-weight:500; }
 
   /* ---------- If-broken box ---------- */
   .broken{
-    background:var(--red-light); border:1.2pt solid #F1B2AA; border-radius:4.5mm; padding:3mm 5mm;
-    display:flex; flex-direction:column; gap:2mm;
+    background:var(--red-light); border:1.2pt solid #F1B2AA; border-radius:4.5mm; padding:3.5mm 5.5mm;
+    display:flex; flex-direction:column; gap:2.5mm;
   }
   .broken-head{ display:flex; align-items:center; gap:2.5mm; }
   .broken-head .circ{
@@ -108,13 +108,13 @@
   .broken-head .circ svg{ width:4.5mm;height:4.5mm; fill:none; stroke:#fff; }
   .broken-head h3{ margin:0; font-size:11.5pt; color:#C0392B; font-weight:800; }
   
-  .broken-comparison{ display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; }
+  .broken-comparison{ display:grid; grid-template-columns:1fr 1fr; gap:4mm; }
   .cmp-card{
-    background:#fff; border-radius:3.5mm; padding:2mm 3mm; display:flex; align-items:center; gap:2.5mm;
+    background:#fff; border-radius:3.5mm; padding:2.5mm 3.5mm; display:flex; align-items:center; gap:3mm;
   }
   .cmp-card.ok-card{ border:1pt solid #A4C492; }
   .cmp-card.ng-card{ border:1pt solid #E69A91; }
-  .cmp-card svg{ width:22mm; height:18mm; flex:0 0 auto; }
+  .cmp-card svg{ width:23mm; height:19mm; flex:0 0 auto; }
   .cmp-text{ display:flex; flex-direction:column; gap:0.5mm; }
   .cmp-title{ font-size:9.5pt; font-weight:800; }
   .cmp-title.ok{ color:var(--forest); }
@@ -124,13 +124,16 @@
   /* ---------- Closing ---------- */
   .closing{
     background:#2C5F2D; color:#fff; border-radius:4mm;
-    padding:2.5mm 4mm; display:flex; align-items:center; gap:3mm;
+    padding:3mm 4.5mm; display:flex; align-items:center; gap:3mm;
   }
   .closing svg{ width:8.5mm;height:8.5mm; flex:0 0 auto; }
   .closing p{ margin:0; font-size:11pt; font-weight:700; line-height:1.45; }
 
   /* ---------- Footer ---------- */
-  .footer{ font-size:8pt; color:var(--gray); line-height:1.5; margin-top:auto; }
+  .footer{
+    font-size:8pt; color:var(--gray); line-height:1.5;
+    margin-top:1.5mm; padding-top:2mm; border-top:1pt solid #D6E4CE;
+  }
   .footer .ai{ font-style:italic; }
 </style>
 </head>
